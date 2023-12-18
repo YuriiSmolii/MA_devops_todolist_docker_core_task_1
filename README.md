@@ -39,3 +39,10 @@ Create a Dockerfile for the TODO app:
 - README.md should contain instructions on how to access the application via a browser.
 - Create PR with your changes and attach it for validation on a platform
 
+## Task result
+- DockerHub [link](https://hub.docker.com/layers/yurakolam/todoapp/1.0.0/images/sha256-a9e078e71d236dc7498398f3203ff61f39c1e1a5db65c5bbf1826787549014c3?context=repo)
+- To build the container use next command:\
+`docker build --tag <DockerHub user>/todoapp:1.0.0 --build-arg VERSION=3.12 --file ./todoapp.Dockerfile .`
+- To run the container use next command:\
+`docker run -p 8080:8080 --name todoapp <DockerHub user>/todoapp:1.0.0`
+- To access the web app use next link: [localhost:8080](localhost:8080)
